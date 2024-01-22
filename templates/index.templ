@@ -1,0 +1,25 @@
+package templates
+
+templ Index() {
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+        <title>go-todo</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+
+        <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+
+    <body>
+        @taskForm()
+        @taskList()
+    </body>
+
+    </html>
+}

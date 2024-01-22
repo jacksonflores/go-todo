@@ -1,0 +1,22 @@
+package templates
+
+templ tasksCard() {
+    <div class="w3-card ">
+    
+    </div>
+}
+
+templ taskForm() {
+    <form class="w3-container" hx-post="/" hx-target="#tasklist" hx-swap="beforeend">
+        <input class="w3-input w3-inline w3-threequarter" placeholder="Enter Task" name="task" />
+        <button class="w3-button w3-quarter" type="submit">Submit</button>
+    </form>
+}
+
+
+
+templ taskList() {
+    <ul class="w3-ul" id="tasklist">
+        
+    </ul>
+}
