@@ -1,22 +1,22 @@
 package templates
 
 templ tasksCard() {
-    <div class="w3-card ">
-    
+    <div class="w3-card w3-blue-grey w3-padding w3-display-topmiddle w3-margin w3-two-thirds">
+        @taskForm()
+        @taskList()
     </div>
 }
 
 templ taskForm() {
     <form class="w3-container" hx-post="/" hx-target="#tasklist" hx-swap="beforeend">
-        <input class="w3-input w3-inline w3-threequarter" placeholder="Enter Task" name="task" />
+        <input class="w3-input w3-threequarter" placeholder="Enter Task" name="task" />
         <button class="w3-button w3-quarter" type="submit">Submit</button>
     </form>
 }
 
-
-
 templ taskList() {
-    <ul class="w3-ul" id="tasklist">
+    <ul class="w3-ul" id="tasklist" style="max-height: 70%; overflow-y: auto;">
         
     </ul>
 }
+    
