@@ -8,7 +8,7 @@ templ tasksCard() {
 }
 
 templ taskForm() {
-    <form class="w3-container" hx-post="/" hx-target="#tasklist" hx-swap="beforeend">
+    <form class="w3-container" hx-post="/" hx-target="#tasklist" hx-swap="beforeend" hx-on::after-request="this.reset()">
         <input class="w3-input w3-threequarter" placeholder="Enter Task" name="task" />
         <button class="w3-button w3-quarter" type="submit">Submit</button>
     </form>

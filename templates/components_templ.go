@@ -59,7 +59,7 @@ func taskForm() templ.Component {
 			templ_7745c5c3_Var2 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<form class=\"w3-container\" hx-post=\"/\" hx-target=\"#tasklist\" hx-swap=\"beforeend\"><input class=\"w3-input w3-threequarter\" placeholder=\"Enter Task\" name=\"task\"> <button class=\"w3-button w3-quarter\" type=\"submit\">")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<form class=\"w3-container\" hx-post=\"/\" hx-target=\"#tasklist\" hx-swap=\"beforeend\" hx-on::after-request=\"this.reset()\"><input class=\"w3-input w3-threequarter\" placeholder=\"Enter Task\" name=\"task\"> <button class=\"w3-button w3-quarter\" type=\"submit\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
